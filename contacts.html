@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/favicon.png">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Micael de Oliveira .:. contatos</title>
+</head>
+
+<body>
+
+    <a id="top"></a>
+
+    <div class="wrap">
+
+        <header>
+            <a href="/index.html" title="Página inicial"><img src="/img/logo_alien.png" alt="Logotipo do meu portefólio"></a>
+            <h1>Micael de Oliveira Santana<small>Este é meu portefólio.</small></h1>
+        </header>
+
+        <nav>
+            <a href="/index.html" title="Página inicial">
+                <i class="fa-solid fa-house fa-fw"></i>
+                <span>Início</span>
+            </a>
+            <a href="/contacts.html" title="Faça contato comigo">
+                <i class="fa-solid fa-comments fa-fw"></i>
+                <span>Contatos</span>
+            </a>
+            <a href="/about.html" title="Um pouco sobre mim...">
+                <i class="fa-solid fa-circle-user"></i></i>
+                <span>Sobre mim</span>
+            </a>
+        </nav>
+
+        <main>
+
+            <article>
+
+                <div class="contents">
+                    <form name="faleconosco" method="get" onsubmit="msg();">
+                      <fieldset class="grupo">
+                        <legend>Deixe Sua Mensagem</legend>
+            
+                        <label>Informe seu nome:</label>
+                        <input
+                          type="text"
+                          class="maior"
+                          name="nome"
+                          id="nome"
+                          required
+                          maxlength="50"
+                          placeholder="Digite seu nome completo..."
+                          
+                        />
+                        <br /><br />
+        
+                        <label>Informe o teu telefone</label>
+                        <input type="text" name="tel" maxlength="14" id="telefone" placeholder="(00)00000-0000" size="12">
+                        <br> <br>
+            
+                        <label>Informe o assunto:</label>
+                        <select class="menor" name="assunto" id="assunto">
+                          <option value="0">Selecione o Assunto</option>
+                          <option value="1">Críticas</option>
+                          <option value="2">Sugestões</option>
+                          <option value="3">Outros</option>
+                        </select>
+                        <br /><br />
+            
+                        <label>Deixe seu recado:</label>
+                        <br />
+                        <textarea
+                          name="recado"
+                          class="maior"
+                          id="recado"
+                          rows="5"
+                          required
+                          maxlength="100"
+                          placeholder="Digite seu recado..."
+                        ></textarea>
+                        <br /><br />
+            
+                        <input type="submit" name="enviar" id="enviar" value="ENVIAR" />
+                        <input type="reset" name="limpar" id="limpar" value="LIMPAR" />
+                      </fieldset>
+                    </form>
+                  </div>
+
+            </article>
+
+            <aside>
+
+                <h3>Soft Skill:</h3>
+                <ul>
+                  <li>Trabalho em equipe</li>
+                  <li>Inteligência emocional</li>
+                  <li>Boa comunicação</li>
+                  <li>Adaptabilidade</li>
+                </ul>
+
+                    <h3>Hard Skill:</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Java Script</li>
+                        <li>PHP</li>
+      
+                      </ul>
+            </aside>
+
+        </main>
+
+        <footer>
+
+            <div class="footer-top">
+                <a href="/" title="Página inicial"><i class="fa-solid fa-house fa-fw"></i></a>
+                <div>&copy; 2022 Micael de Oliveira</div>
+                <a href="#top" title="Topo da página"><i class="fa-solid fa-circle-up fa-fw"></i></a>
+            </div>
+
+            <div class="footer-bottom">
+
+                <div class="bottom-social">
+                    <h4>Redes Sociais:</h4>
+                    <a href="https://facebook.com/" target="_blank" title="Meu facebook">
+                        <i class="fa-brands fa-facebook-square fa-fw"></i>
+                        <span>Facebook</span>
+                    </a>
+                    <a href="https://instagram.com/mikesuel_2.0" target="_blank" title="Meu Instagram">
+                        <i class="fa-brands fa-instagram-square fa-fw"></i>
+                        <span>Instagram</span>
+                    </a>
+                </div>
+
+                <div class="bottom-menu">
+                    <h4>Acesso rápido:</h4>
+                    <a href="/about.html" title="Um pouco sobre mim...">
+                        <i class="fa-solid fa-circle-user"></i></i>
+                        <span>Sobre mim</span>
+                    </a>
+                    </a>
+                    <a href="/contacts.html" title="Faça contato conosco">
+                        <i class="fa-solid fa-comments fa-fw"></i>
+                        <span>Contatos</span>
+                    </a>
+                </div>
+
+            </div>
+
+        </footer>
+
+    </div>
+
+    <script src="js/funcao.js"></script>
+</body>
+
+</html>
